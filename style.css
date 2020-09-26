@@ -13,7 +13,7 @@ html
 }
 
 body{
-    /*background: url(images/Home.png) no-repeat center;*/
+    /*background: url(images/Home_bg.png) no-repeat center;*/
     background-color: white;
     background-size: cover;
 }
@@ -23,32 +23,32 @@ a
     text-decoration: none;
 }
 
-.mySlides .button
+.button
 {
   height: 2rem;
-  width: 10rem;
+  width: 7rem;
   text-align: center;
-  border: solid 3px #9499F4;
+  border: solid 2px #9499F4;
   border-radius: 3px;
   cursor: pointer;
   margin-left: 4.7rem;
   margin-top: 1rem;
-  padding-top: 3px;
+  padding-top: 5px;
   transition-duration: 200ms;
   user-select: none;
 }
 
-.mySlides .button a
+.button a
 {
     color: #9499F4;
 }
 
-.mySlides .button:hover 
+.button:hover 
 {
     background-color: #9499F4;
     color: black;
 }
-.mySlides .button:hover a
+.button:hover a
 {
     color: black;
 }
@@ -143,7 +143,6 @@ a
     flex-direction: row;
     margin-top: 5rem;
     margin-right: 33.5em;
-    
 }
 
 .Photogrid3
@@ -151,8 +150,7 @@ a
     display: flex;
     flex-direction: row;
     margin-top: 5rem;
-    margin-left: 31rem;
-    
+    margin-left: 30rem;
 }
 
 .Box h1
@@ -197,7 +195,6 @@ a
 /*End Photogrid*/
 
 /*Start Social Media*/
-
 hr.one
 {
     border: none;
@@ -214,7 +211,7 @@ hr.one
     font-weight: 300;
     color: black;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
     font-size: 24px;
 }
 
@@ -264,7 +261,6 @@ hr.one
 }
 
 /*End Social Media*/
-
 .copyright{
     width: 100%;
     height: 15rem;
@@ -272,7 +268,7 @@ hr.one
     background-color: #44448d;
     padding: 2rem 0;
     position: relative;
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 
 .up{
