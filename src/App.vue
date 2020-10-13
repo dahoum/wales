@@ -4,13 +4,13 @@
           <img src="./assets/LOGO.jpg">
       </div>
 
-    <div id="nav">
-      <router-link to="/about">AMSTERDAM LIGHT FESTIVAL</router-link> 
-      <router-link to="/about">ABOUT</router-link>
-      <router-link to="/about">TALENT SCOUTING</router-link>
-      <router-link to="/about">NURSERIES</router-link>
-      <router-link to="/about">BLOG</router-link>
-    </div>
+      <div id="nav">
+        <router-link to="/#">HOME</router-link> 
+        <router-link to="/#">PAST EVENTS</router-link>
+        <router-link to="/#">TALENT SCOUTING</router-link>
+        <router-link to="/#">NURSERIES</router-link>
+        <router-link to="/Blog">BLOG</router-link>
+      </div>
   </div>  
   <router-view />
 </template>
@@ -41,16 +41,18 @@
 
 #nav {
   padding: 30px;
+  margin-top: 2rem;
 
   a {
     font-weight: 400;
     color: #2c3e50;
     padding: 0.3rem;
-    margin-left: 4rem;
+    margin-left: 6rem;
     text-decoration: none;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #2F4EA8;
+      text-decoration: underline;
     }
   }
 }

@@ -12,11 +12,9 @@
         <ul>
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-            <li><a href="#"><i class="far fa-envelope"></i></a></li>
             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
         </ul>
-    </div>
+      </div>
     </div>
  </div>
 </template>
@@ -63,10 +61,10 @@ export default class Box extends Vue {
     display: flex;
     
       .button {
-      height: 1.7rem;
+      height: 2rem;
       width: 9rem;
       text-align: center;
-      background-color: #9499F4;
+      background-color: #2F4EA8;
       border-radius: 10px;
       cursor: pointer;
       padding-top: 5px;
@@ -92,7 +90,7 @@ export default class Box extends Vue {
       ul {
         list-style: none;
         display: flex;
-        margin-left: 2.5rem;
+        margin-left: 7rem;
         margin-top: 0.7rem;
       }
 
@@ -100,7 +98,7 @@ export default class Box extends Vue {
         padding: 0.5rem;
         
         .far, .fab {
-          color: #9499F4;
+          color: #2F4EA8;
           font-size: 1.2rem;
         }
       }
