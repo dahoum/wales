@@ -7,8 +7,6 @@
         <ul>
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-            <li><a href="#"><i class="far fa-envelope"></i></a></li>
             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
         </ul>
     </div>
@@ -20,28 +18,33 @@
             <ul>
                 <li><a href="#">TERMS & CONDITIONS</a></li>
                 <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="#">Blog</a></li>
                 <li><a href="#">BLOG</a></li>
-                <li><a href="#">ASSOCIATED NURSERIES</a></li>
                 <li><a href="#">TALENT SCOUTING</a></li>
             </ul>
         </div>
         <hr class="two">
         <div class="contact">
-        <h1>CONTACT</h1>
-        <p>
-            For inquiries, please contact —
-            T. E. Shaw
-            Darmstadt, Germany
-            +49 151 5111 26 31
-            t.e.shaw@dahoum.wales
-        </p>
-        <p>
-            Dahoum Limited
-            Nicolaus Copernicus 44
-            BG-1111 Sofia
-        </p>
+            <h1>CONTACT</h1>
+            <p>
+                For inquiries, please contact —
+                T. E. Shaw
+                Darmstadt, Germany
+                +49 151 5111 26 31
+                t.e.shaw@dahoum.wales
+            </p>
+            <p>
+                Dahoum Limited
+                Nicolaus Copernicus 44
+                BG-1111 Sofia
+            </p>
         </div>
         <hr class="three">
+        <div class="mission">
+            <h1>MISSION</h1>
+            <p>Dahoum discovers talent, both undeveloped and lost, and develops it into valuable professionals and sustainable companies through nursery projects.</p>
+             <p>&copy; 1982-2021 Dahoum</p>
+        </div>
 
     </footer>
 </template>
@@ -92,7 +95,7 @@ export default class Footer extends Vue {
             font-size: 25px;
             line-height: 60px;
             transition: .6s;
-            color: black;
+            color: #2F4EA8;
         }
 
         a {
@@ -111,7 +114,8 @@ export default class Footer extends Vue {
     .copyright {
         width: 100%;
         height: 20rem;        
-        background-color: #CBCDFF;
+        background-color: white;
+        box-shadow: 0px -1px 48px -2px rgba(0,0,0,0.16);
         margin-top: 7rem;
 
         .menu, a {
@@ -128,9 +132,9 @@ export default class Footer extends Vue {
         }
 
         hr.two {
-            width: 12rem;
+            width: 15rem;
             transform: rotate(90deg);
-            background: #401857;
+            background:#2F4EA8;
             margin-top: -5rem;
             margin-left: 12rem;
             
@@ -157,7 +161,7 @@ export default class Footer extends Vue {
         
         .contact{
             margin-top: -8rem;
-            margin-left: 30rem;
+            margin-left: 25rem;
 
             h1, p {
             font-weight: 300;
@@ -171,11 +175,26 @@ export default class Footer extends Vue {
         }
 
         hr.three {
-            width: 12rem;
+            width: 15rem;
             transform: rotate(90deg);
-            background: #401857;
+            background: #2F4EA8;
             margin-top: -7rem;
             margin-left: 53rem;
+        }
+
+        .mission {
+            margin-top: -8rem;
+            margin-left: 65rem;
+
+            h1, p {
+            font-weight: 300;
+            font-size: 20px;
+            text-align: start;
+            width: 18rem;
+            padding-top: 1.5rem;
+            color: #707070;
+            font-size: 20px;
+            }
         }
     }
 
