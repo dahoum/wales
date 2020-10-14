@@ -6,9 +6,9 @@
 
       <div id="nav">
         <router-link to="/#">HOME</router-link> 
-        <router-link to="/#">PAST EVENTS</router-link>
-        <router-link to="/#">TALENT SCOUTING</router-link>
-        <router-link to="/#">NURSERIES</router-link>
+        <router-link to="/Past">PAST EVENTS</router-link>
+        <router-link to="/Talentscouting">TALENT SCOUTING</router-link>
+        <router-link to="/Nurseries">NURSERIES</router-link>
         <router-link to="/Blog">BLOG</router-link>
       </div>
   </div>  

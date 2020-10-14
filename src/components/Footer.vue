@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="#">TERMS & CONDITIONS</a></li>
                 <li><a href="#">PRIVACY POLICY</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#">ABOUT</a></li>
                 <li><a href="#">BLOG</a></li>
                 <li><a href="#">TALENT SCOUTING</a></li>
             </ul>
@@ -27,7 +27,7 @@
         <div class="contact">
             <h1>CONTACT</h1>
             <p>
-                For inquiries, please contact —
+                For inquiries, please contact —<br>
                 T. E. Shaw
                 Darmstadt, Germany
                 +49 151 5111 26 31
@@ -113,7 +113,7 @@ export default class Footer extends Vue {
 
     .copyright {
         width: 100%;
-        height: 20rem;        
+        height: 25rem;        
         background-color: white;
         box-shadow: 0px -1px 48px -2px rgba(0,0,0,0.16);
         margin-top: 7rem;
@@ -125,6 +125,7 @@ export default class Footer extends Vue {
             padding-top: 4rem;
             padding-left: 0.5rem;
             font-weight: 300;
+            font-size: 20px;
 
             li {
                 padding: 0.5rem;
