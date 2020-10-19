@@ -39,7 +39,6 @@ export default class Box extends Vue {
     padding: 1rem;
     box-shadow: 10px 10px 33px 0px rgba(0,0,0,0.16);
     margin-top: 8rem;
-    margin-left: 3rem;
 
     h1{
       font-weight: 400;

@@ -3,7 +3,25 @@
   <div class="topic-conrainer">
     <h1>Recent from blog</h1>
   </div>
-  <Box/>
+  <div class="first-row">
+    <Box/>
+    <Box/>
+    <Box/>
+  </div>
+  <div class="topic-conrainer">
+    <h1>Recent from Scratch</h1>
+  </div>
+  <div class="second-row">
+    <Box/>
+    <Box/>
+  </div>
+  <div class="topic-conrainer">
+    <h1>Recent from Managing People</h1>
+  </div>
+   <div class="third-row">
+    <Box/>
+    <Box/>
+  </div>
   <Footer/>
 </template>
 
@@ -38,6 +56,29 @@ export default class Home extends Vue {}
     h1 {
       font-weight: 400;
       font-size: 29px;
+    }
+  }
+
+  .first-row {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .second-row {
+    display: flex;
+    align-content: flex-start;
+
+    .Box {
+      margin-left: 5rem;
+    }
+  }
+
+  .third-row {
+    display: flex;
+    justify-content: flex-end;
+
+    .Box {
+      margin-right: 5rem;
     }
   }
 </style>
