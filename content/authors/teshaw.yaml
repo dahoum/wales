@@ -1,16 +1,5 @@
-name: Evelyn
-sections:
-  - section1
-  - section2
-  - section3456
-person:
-  name: Rado
-  age: 21
-  city: Amsterdam
-people:
-  - name: Evelyn
-    age: 20
-    city: Lom
-  - name: Yavor
-    age: 20
-    city: DarmStadt
+name: T. E. Shaw
+email: t.e.shaw@dahoum.wales
+phone: +49 151 5 111 26 31
+twitter:
+linkedin:
