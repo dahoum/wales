@@ -1,0 +1,20 @@
+author: teshaw
+header:
+  - title:
+  - summary:
+
+sections:
+  - section1
+  - section2
+  - section3456
+person:
+  name: Rado
+  age: 21
+  city: Amsterdam
+people:
+  - name: Evelyn
+    age: 20
+    city: Lom
+  - name: Yavor
+    age: 20
+    city: DarmStadt
