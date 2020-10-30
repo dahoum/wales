@@ -11,9 +11,6 @@
         </ul>
     </div>
     <footer class="copyright">
-        <div class="up" id="up">
-            <i class="fas fa-chevron-up"></i>
-        </div>
         <div class="menu">
             <ul>
                 <li><a href="#">TERMS & CONDITIONS</a></li>
@@ -139,26 +136,7 @@ export default class Footer extends Vue {
             margin-top: -5rem;
             margin-left: 12rem;
             
-        }
-
-        .up {
-            position: fixed;
-            width: 3rem;
-            height: 3rem;
-            background-color: transparent;
-            right: 5rem;
-            border-radius: 100%;
-            display: flex;
-            animation: pulse 3s infinite;
-            cursor: pointer;
-            bottom: 2rem;  
-            
-            i {
-                color:black;
-                font-size: 2rem;
-                margin: auto;
-            }
-        }  
+        } 
         
         .contact{
             margin-top: -8rem;
@@ -198,18 +176,4 @@ export default class Footer extends Vue {
             }
         }
     }
-
-@keyframes pulse{
-    0% {
-        box-shadow: 0 0 0 0 #9499F4;
-    }
-    70% {
-        box-shadow: 0 0 0 1rem rgba(253, 87, 191, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
-    }
-}
-
-
 </style>

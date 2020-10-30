@@ -1,5 +1,5 @@
 <template>
-  <img alt="Main img" src="../assets/1.png" />
+  <Slides/>  
   <div class="topic-conrainer">
     <h1>Recent from blog</h1>
   </div>
@@ -27,25 +27,22 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
+import Slides from "@/components/Slides.vue"; 
 import Box from "@/components/Box.vue"; 
 import Footer from "@/components/Footer.vue"; 
 
 @Options({
   components: {
-    Box, Footer
+    Box, Slides, Footer
   }
 })
 export default class Home extends Vue {}
 </script>
 
 <style scoped lang="scss">
-  img {
-    width: 100%;
-    height: 100%;
-  }
 
   .topic-conrainer {
-    width: 29%;
+    width: 30%;
     height: 4rem;
     border-radius: 0px 22px 22px 0px;
     padding: 1rem;
