@@ -1,7 +1,7 @@
 <template>
   <Slides/>  
   <div class="topic-conrainer">
-    <h1>Recent from blog</h1>
+    <h1>Recent posts from blog</h1>
   </div>
   <div class="first-row">
     <Box/>
@@ -18,7 +18,7 @@
   <div class="topic-conrainer">
     <h1>Recent from Managing People</h1>
   </div>
-   <div class="third-row">
+  <div class="third-row">
     <Box/>
     <Box/>
   </div>
@@ -76,6 +76,121 @@ export default class Home extends Vue {}
 
     .Box {
       margin-right: 5rem;
+    }
+  }
+
+// Start media //
+
+  @media (max-width: 1280px) {
+    .topic-conrainer {
+      height: 4rem;
+      width: 45%;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .first-row {
+    flex-direction: column;
+    margin-right: 0rem;
+    margin-left: 19rem;
+    }
+
+    .second-row {
+    flex-direction: column;
+    margin-right: 5rem;
+    margin-left: 14rem;
+    }
+
+    .third-row {
+    flex-direction: column;
+    margin-right: 0rem;
+    margin-left: 19rem;
+    }
+
+    .topic-conrainer {
+      height: 4rem;
+      width: 60%;
+    }
+  }
+
+  @media (max-width: 768px) { 
+    .first-row {
+    flex-direction: column;
+    margin-right: 0rem;
+    margin-left: 10rem;
+    }
+
+    .second-row {
+    flex-direction: column;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    }
+
+    .third-row {
+    flex-direction: column;
+    margin-right: 0rem;
+    margin-left: 10rem;
+    }
+
+    .topic-conrainer {
+      height: 4rem;
+      width: 60%;
+    }
+    
+  }
+
+  @media (max-width: 600px) {
+    .first-row {
+    flex-direction: column;
+    margin-right: 0rem;
+    margin-left: 8rem;
+    }
+
+    .second-row {
+    flex-direction: column;
+    margin-right: 5rem;
+    margin-left: 2rem;
+    }
+
+    .third-row {
+    flex-direction: column;
+    margin-right: 0rem;
+    margin-left: 8rem;
+    }
+
+    .topic-conrainer {
+      height: 5.5rem;
+      width: 60%;
+    }
+  }
+
+  @media (max-width: 420px) {
+    
+    .first-row {
+    flex-direction: column;
+    margin-right: -3rem;
+    margin-left: 2rem;
+    }
+
+    .second-row {
+    flex-direction: column;
+    margin-right: 2rem;
+    margin-left: -3rem;
+    }
+
+    .third-row {
+    flex-direction: column;
+    margin-right: -3rem;
+    margin-left: 2rem;
+    }
+
+    .topic-conrainer {
+      height: 6rem;
+      width: 75%;
+      
+      h1{
+        margin: auto;
+      }
     }
   }
 </style>

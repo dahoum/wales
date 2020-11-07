@@ -1,16 +1,10 @@
-name: Evelyn
-sections:
-  - section1
-  - section2
-  - section3456
-person:
-  name: Rado
-  age: 21
-  city: Amsterdam
-people:
-  - name: Evelyn
-    age: 20
-    city: Lom
-  - name: Yavor
-    age: 20
-    city: DarmStadt
+author: "T.E Shaw"
+date: "30.Octomber.2020"
+readingTime: "5 minutes"
+title: "First scratch post"
+summary: |
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Dignissimos numquam reprehenderit saepe temporibus voluptates sunt?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Dignissimos numquam reprehenderit saepe temporibus voluptates sunt?
+

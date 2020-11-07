@@ -1,8 +1,8 @@
 <template>
  <div class="Box">
-    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, aperiam dolorum vero, eum adipisci deleniti vitae necessitatibus aliquid odio exercitationem placeat molestias doloribus! Cumque facere et vel? Libero, esse dolorem!</p>
-    <h3>10.02.2020 / T.E. Shawn / 5m</h3>
+    <div class="title"><v-for>{{title}} </v-for></div>
+    <div class="summary"><v-for>{{summary}}</v-for></div>
+    <div class="author"><v-for>{{author}}</v-for> / <v-for>{{date}}</v-for> / <v-for>{{readingTime}}</v-for></div>
     <img alt="Main img" src="../assets/Image.png"/>
     <div class="links">
       <div class="button">
@@ -21,10 +21,17 @@
 
 
 
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
+<script>
+import testFile from 'js-yaml-loader!../../content/test.yaml'
 
-export default class Box extends Vue {
+export default {
+  created() {
+    this.author = testFile.author
+    this.title = testFile.title
+    this.date = testFile.date
+    this.readingTime = testFile.readingTime
+    this.summary = testFile.summary
+  }
 }
 </script>
 
@@ -40,17 +47,23 @@ export default class Box extends Vue {
     box-shadow: 10px 10px 33px 0px rgba(0,0,0,0.16);
     margin-top: 8rem;
 
-    h1{
-      font-weight: 400;
+    img {
+      max-width: 100%;
+      height: auto;
     }
 
-    h3 {
+    .title{
+      font-weight: 400;
+      font-size: 2rem;
+    }
+
+    .author {
       font-size: 15px;
-      margin-top: 3rem;
+      margin-top: 2rem;
       font-weight: 300;
     }
 
-    p {
+    .summary {
       font-weight: 300;
       margin-top: 1rem;
     }
@@ -103,4 +116,69 @@ export default class Box extends Vue {
       }
     }
   }
+
+  // Start media //
+  @media (max-width: 1280px) {
+    .links {
+      .social-menu {
+       margin-right: -3rem;
+      }
+      .button {
+       margin-right: -4rem;
+       width: 40%;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .Box {
+      width: 60%;
+    }
+  }
+
+  @media (max-width: 768px) { 
+    .Box {
+      width: 65%;
+    }
+    .links {
+      .social-menu {
+       margin-right: -3rem;
+      }
+      .button {
+       margin-right: -4rem;
+       width: 50%;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .Box {
+      width: 75%;
+    }
+    .links {
+      .social-menu {
+       margin-right: -3rem;
+      }
+      .button {
+       margin-right: -4rem;
+       width: 50%;
+      }
+    }
+  }
+
+  @media (max-width: 420px) {
+    .Box {
+      width: 80%;
+    }
+    .links {
+      .social-menu {
+       margin-left: -5rem;
+      }
+      .button {
+       margin-right: 0rem;
+       width: 50%;
+      }
+    }
+  }
+  
 </style>

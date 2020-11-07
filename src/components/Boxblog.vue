@@ -3,30 +3,37 @@
        <div class="container">
            <img alt="Main img" src="../assets/Image.png"/>
            <div class="text">
-               <h3>02.March.2020 / T.E Shawn / 5m </h3>
-               <h1>LEARN ENGINEERING OF REQUIREMENTS FROM SAM SPIEGEL</h1>
-               <p>A frequently underappreciated role in the software development process is that of the Product Manager/Owner. Even though it is nominally included in most modern processes, it frequently... </p>
-               <div class="links">
-                    <div class="button">
-                        <a href="#">Read more</a>
-                    </div>
-                    <div class="social-menu">
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+              <div class="author"><v-for>{{author}}</v-for> / <v-for>{{date}}</v-for> / <v-for>{{readingTime}}</v-for></div>
+              <div class="title"><v-for>{{title}}</v-for></div>
+              <div class="summary"><v-for>{{summary}}</v-for></div>
+              <div class="links">
+                  <div class="button">
+                      <a href="#">Read more</a>
+                  </div>
+                  <div class="social-menu">
+                      <ul>
+                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
            </div>
        </div>
    </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
+<script>
+import testFile from 'js-yaml-loader!../../content/test.yaml'
 
-export default class Boxblog extends Vue {
+export default {
+  created() {
+    this.author = testFile.author
+    this.title = testFile.title
+    this.date = testFile.date
+    this.readingTime = testFile.readingTime
+    this.summary = testFile.summary
+  }
 }
 </script>
 
@@ -41,37 +48,39 @@ export default class Boxblog extends Vue {
         margin-top: 8rem;
         margin-left: 3rem;
 
+    .container {
+      display: flex;
+
         img {
-            width: 100%;
-            height: 100%;
+          width: 100%;
+          height: 100%;
         }
 
-        .container {
-            display: flex;
+        .author {
+          font-weight: 300;
+          text-align: start;
+          margin-left: 2rem;
+          margin-top: 1rem;
+          font-size: 15px;
+        }
         
-        
-            h1 {
-            font-weight: 500;
+        .title {
+            font-size: 2.5rem;
+            font-weight: 400;
             text-align: start;
             margin-left: 2rem;
             margin-top: 2rem;
-            }
+        }
 
-            h3 {
-            font-size: 15px;
-            font-weight: 300;
-            text-align: start;
-            margin-left: 2rem;
-            }
-
-            p {
+        .summary {
             font-size: 20px;
             font-weight: 300;
             text-align: start;
             margin-left: 2rem;
-            margin-top: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
             }
-        }
+      }
     }
 
     .links {

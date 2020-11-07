@@ -1,14 +1,10 @@
 <template>
   <div class="header">  
-      <div id="app">
-          <img src="./assets/LOGO.jpg">
-      </div>
-
-      <div id="nav">
+      <img class="logo" src="./assets/LOGO.jpg">
+      <div class="nav">
         <ul>
           <li> <router-link to="/#">HOME</router-link>  
           </li>
-
           <li> <router-link to="/Past">PAST EVENTS</router-link> 
               <ul>
                     <li><router-link to="/Test">Amsterdam Light Festival</router-link></li>
@@ -17,13 +13,11 @@
                     <li><router-link to="/Test">Northwestern Tournée 2019</router-link></li> 
               </ul>
           </li>
-
           <li> <router-link to="/Talentscouting">TALENT SCOUTING</router-link> 
               <ul>
                 <li><router-link to="/Test">Definition of Talent</router-link></li>
               </ul>
           </li>
-
           <li> <router-link to="/Nurseries">NURSERIES</router-link> 
               <ul>
                 <li><router-link to="/Test">The Beginning</router-link></li>
@@ -35,21 +29,15 @@
                 <li><router-link to="/Test">Associated Nurseries</router-link></li>
               </ul>
           </li>
-
           <li> <router-link to="/Blog">BLOG</router-link> 
           </li>
-
-          </ul>
+        </ul>
       </div>
   </div>  
   <router-view />
 </template>
 
-
-
-
 <style lang="scss">
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 * {
@@ -68,16 +56,24 @@
 .header {
   display: flex;
   flex-direction: row;
+  .logo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+
+  }
 }
 
-#nav {
+.nav {
   padding: 35px;
+  padding-left: 10rem;
   margin-top: 2rem;
 
   ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     position: absolute;
   }
 
@@ -95,7 +91,7 @@
       text-align: left;
       float: left;
       display: none;
-      margin-left: 6rem;
+      margin-left: 0rem;
       transition: 0.6ms;
 
       a {
@@ -114,7 +110,8 @@
     font-weight: 400;
     color: #2c3e50;
     padding: 0.3rem;
-    margin-left: 6rem;
+    margin-left: auto;
+    margin-right: 4rem;
     text-decoration: none;
 
     &.router-link-exact-active {
@@ -122,7 +119,22 @@
       text-decoration: underline;
     }
   }
+  }
 
-  
-}
+  // Start media //
+
+  @media (max-width: 1280px) {
+       
+  }
+
+  @media (max-width: 992px) {
+    
+  }
+
+  @media (max-width: 600px) { 
+      
+  }
+
 </style>
+
+

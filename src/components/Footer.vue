@@ -40,9 +40,8 @@
         <div class="mission">
             <h1>MISSION</h1>
             <p>Dahoum discovers talent, both undeveloped and lost, and develops it into valuable professionals and sustainable companies through nursery projects.</p>
-             <p>&copy; 1982-2021 Dahoum</p>
+            <p>&copy; 1982-2021 Dahoum</p>
         </div>
-
     </footer>
 </template>
 
@@ -59,28 +58,26 @@ export default class Footer extends Vue {
         border-radius: 2px;
         height: 3px;
         width: 60%;
-        margin-left: 20rem;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 5rem;
-        justify-self: center;
-        background: gray;
+        background: #2F4EA8;
     }
 
     .socialmedia h1 {
         font-weight: 300;
         color: black;
-        text-align: center;
         margin-top: 1rem;
         font-size: 24px;
     }
 
     .social-menu {
+        display: block;
+        margin-left: 45%;
+        margin-right: auto;
 
         ul{
-            position: absolute;
-            transform: translate(-50%, -50%);
             display: flex;
-            margin-top: 3rem;
-            margin-left: 47rem;
         }
 
         ul li {
@@ -99,7 +96,6 @@ export default class Footer extends Vue {
             position: relative;
             display: block;
             background-color: transparent;
-            text-align: center;
             transition: 0.5s;
         }
 
@@ -113,67 +109,180 @@ export default class Footer extends Vue {
         height: 25rem;        
         background-color: white;
         box-shadow: 0px -1px 48px -2px rgba(0,0,0,0.16);
-        margin-top: 7rem;
+        margin-top: 4rem;
+        display: flex;
 
         .menu, a {
             text-decoration: none;
             color: #707070;
             text-align: start;
-            padding-top: 4rem;
-            padding-left: 0.5rem;
+            margin-left: 1.5rem;
+            margin-top: 3rem;
             font-weight: 300;
             font-size: 20px;
 
             li {
                 padding: 0.5rem;
+                list-style: none;
             }
         }
 
         hr.two {
-            width: 15rem;
-            transform: rotate(90deg);
-            background:#2F4EA8;
-            margin-top: -5rem;
+            height: 20rem;
+            width: 3px;
+            transform: rotate(360deg);
+            border-radius: 2px;
+            border: none;
             margin-left: 12rem;
-            
+            margin-top: 3rem;
+            background: #2F4EA8;
         } 
         
-        .contact{
-            margin-top: -8rem;
-            margin-left: 25rem;
+        .contact {
+            margin-left: 5rem;
+            margin-top: 3rem;
 
             h1, p {
             font-weight: 300;
             font-size: 20px;
             text-align: start;
             width: 18rem;
-            padding-top: 1.5rem;
             color: #707070;
             font-size: 20px;
+            padding-bottom: 2rem;
             }
         }
 
         hr.three {
-            width: 15rem;
-            transform: rotate(90deg);
+            height: 20rem;
+            width: 3px;
+            border: none;
+            border-radius: 2px;
+            margin-left: 12rem;
+            margin-top: 3rem;
             background: #2F4EA8;
-            margin-top: -7rem;
-            margin-left: 53rem;
         }
 
         .mission {
-            margin-top: -8rem;
-            margin-left: 65rem;
+            margin-left: 5rem;
+            margin-top: 3rem;
 
             h1, p {
             font-weight: 300;
             font-size: 20px;
             text-align: start;
             width: 18rem;
-            padding-top: 1.5rem;
             color: #707070;
             font-size: 20px;
+            padding-bottom: 2rem;
             }
         }
     }
+
+    // Start media //
+   
+   @media (max-width: 1280px) {
+       .copyright {
+
+           .menu {
+               margin-left: 0rem;
+           }
+            
+            hr.two {
+                margin-left: 2rem;
+            }    
+        }
+    }
+
+    @media (max-width: 992px) {
+        hr.one {
+            width: 70%;
+        }
+
+        .social-menu {
+            margin-left: 40%;
+            margin-right: auto;
+        }
+
+        .copyright {
+            display: block;
+            height: 100%;
+
+            .menu {
+                margin-left: 3rem;
+                padding-top: 1rem;
+            }
+
+            hr.two {
+            transform: rotate(90deg);
+            margin-top: -8rem;
+             margin-left: 12rem;
+            }
+
+            .contact {
+                margin-top: -8rem;
+            }
+
+            hr.three {
+            transform: rotate(90deg);
+            margin-top: -8rem;
+            }
+
+            .mission {
+                margin-top: -8rem;
+            }
+        }  
+    }
+
+    @media (max-width: 420px) { 
+        hr.one {
+            width: 70%;
+        }
+
+        .social-menu {
+            margin-left: 30%;
+            margin-right: auto;
+        }
+
+        .socialmedia {
+                h1{
+                    font-size: 1.5rem;
+                    margin-left: 1rem;
+                    
+                }
+            }
+
+        .copyright {
+            display: block;
+            height: 100%;
+
+            .menu {
+                margin-left: 1.6rem;
+                padding-top: 1rem;
+            }
+
+            hr.two {
+            transform: rotate(90deg);
+            margin-top: -8rem;
+            margin-left: 11rem;
+            }
+
+            .contact {
+                margin-top: -8rem;
+                margin-left: 3rem;
+            }
+
+            hr.three {
+            transform: rotate(90deg);
+            margin-top: -8rem;
+            margin-left: 11rem;
+            }
+
+            .mission {
+                margin-top: -8rem;
+                margin-left: 3rem;
+            }
+        }  
+    }
+  
 </style>
