@@ -194,6 +194,28 @@ export default class Footer extends Vue {
         }
     }
 
+    @media (max-width: 1100px) {
+       .copyright {
+           .menu {
+               margin-left: 3rem;
+           }
+            
+            .mission {
+                margin-left: 2rem;
+            } 
+
+            hr.three {
+                margin-left: 3rem;
+            }
+
+            .contact {
+                margin-left: 2rem;
+            }
+
+
+        }
+    }
+
     @media (max-width: 992px) {
         hr.one {
             width: 70%;
@@ -226,6 +248,7 @@ export default class Footer extends Vue {
             hr.three {
             transform: rotate(90deg);
             margin-top: -8rem;
+            margin-left: 12rem;
             }
 
             .mission {

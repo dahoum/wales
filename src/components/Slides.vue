@@ -94,10 +94,6 @@ export default class Slides extends Vue {
         }
     }
 
-    @media (max-width: 768px) { 
-    
-    }
-
     @media (max-width: 600px) {
         .text {
             h1 {
@@ -146,5 +142,4 @@ export default class Slides extends Vue {
             }
         }
     }
-    
 </style>

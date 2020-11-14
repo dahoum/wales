@@ -133,7 +133,7 @@ export default class Home extends Vue {}
     }
 
     .topic-conrainer {
-      height: 4rem;
+      height: 6rem;
       width: 60%;
     }
     

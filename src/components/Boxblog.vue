@@ -41,15 +41,15 @@ export default {
     @import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 
     .box {
-        width: 60%;
+        width: 70%;
         border-radius: 24px;
         padding: 1rem;
         box-shadow: 10px 10px 33px 0px rgba(0,0,0,0.16);
         margin-top: 8rem;
         margin-left: 3rem;
 
-    .container {
-      display: flex;
+      .container {
+        display: flex;
 
         img {
           width: 100%;
@@ -79,7 +79,7 @@ export default {
             margin-left: 2rem;
             margin-top: 2rem;
             margin-bottom: 2rem;
-            }
+        }
       }
     }
 
@@ -113,7 +113,7 @@ export default {
     }
 
     .social-menu {
-        margin-left: 9rem;
+      margin-left: auto;
 
       ul {
         list-style: none;
@@ -129,6 +129,91 @@ export default {
           color: #2F4EA8;
           font-size: 1.4rem;
         }
+      }
+    }
+  }
+
+   // Start media //
+  @media (max-width: 1080px) {
+   .box {
+        width: 80%;
+        height: 25rem;
+       
+    }
+    .links{
+      .button{
+        margin-top: -0.5rem;
+      }
+    }
+    .social-menu {
+      margin-left: auto;
+      margin-top: -1.6rem;
+    }
+  }
+
+  @media (max-width: 970px) {
+    .box{
+      width: 60%;
+      height: 60%;
+      margin-top: 5rem;
+      margin-left: auto;
+      margin-right: auto;
+
+      .container{
+        display: block;
+
+        .author {
+          text-align: center;
+          margin-left: 0rem;
+        }
+        
+        .title {
+            text-align: center;
+            margin-left: 0rem;
+        }
+
+        .summary {
+            text-align: center;
+            margin-left: 0rem;
+        }
+      }
+    }
+        
+    
+  }
+
+  @media (max-width: 610px) {
+    .box{
+      width: 80%;
+    } 
+    .links{
+      .button{
+        margin-left: 0rem;
+        height: 2.2rem;
+      }
+    }
+    
+  }
+
+  @media (max-width: 540px) {
+    .links{
+      .button{
+        margin-left: 0rem;
+        margin-right: -3rem;
+        width: 7rem;
+        height: 2.2rem;
+      }
+    }
+    
+  }
+
+  @media (max-width: 440px) {
+    .links{
+      .button{
+        margin-left: 0rem;
+        margin-right: -6rem;
+        width: 7rem;
+        height: 2.2rem;
       }
     }
   }

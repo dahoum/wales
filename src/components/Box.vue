@@ -98,11 +98,10 @@ export default {
     }
 
     .social-menu {
-
       ul {
         list-style: none;
         display: flex;
-        margin-left: 7rem;
+        margin-left: 6.5rem;
         margin-top: 0.7rem;
       }
 
@@ -122,6 +121,9 @@ export default {
     .links {
       .social-menu {
        margin-right: -3rem;
+      }
+       .social-menu {
+       margin-right: 0rem;
       }
       .button {
        margin-right: -4rem;
@@ -166,7 +168,7 @@ export default {
     }
   }
 
-  @media (max-width: 420px) {
+  @media (max-width: 527px) {
     .Box {
       width: 80%;
     }
