@@ -62,11 +62,11 @@
 .header {
   display: flex;
   flex-direction: row;
+
   .logo {
   width: 100%;
   max-width: 400px;
   height: auto;
-
   }
 }
 
@@ -175,8 +175,9 @@
       ul{
         display: none;
         background-color: whitesmoke;
+        box-shadow: -27px 0px 30px -10px rgba(0,0,0,0.30);
         font-size: 1rem;
-        width: 30%;
+        width: 40%;
         padding-top: 6rem;
         padding-right: auto;
         text-align: start;
@@ -198,6 +199,10 @@
 
       ul li ul {
         margin-top: 4rem;
+        border: none;
+        box-shadow: none;
+        opacity: 0.0;
+        z-index: -1;
         li {
           line-height: 35px;
           width: 250px;
@@ -208,7 +213,6 @@
         }
       }
     }
-    
   }
 
   @media (max-width: 880px) { 
@@ -220,8 +224,6 @@
       margin-right: auto;
       }
     }
-    
-    
   }
 
   @media (max-width: 800px) { 
@@ -235,7 +237,6 @@
 
       ul{
         display: none;
-        background-color: whitesmoke;
         font-size: 1rem;
         width: 40%;
         padding-top: 6rem;
@@ -264,9 +265,9 @@
       margin-left: 20vw;
       margin-right: auto;
       }
+
       ul{
         display: none;
-        background-color: whitesmoke;
         font-size: 1rem;
         width: 50%;
         padding-top: 6rem;
@@ -283,13 +284,16 @@
           margin-left: -3rem;
         }
       }
-    }
-
-    
-    
+    } 
   }
 
-  @media (max-width: 550px) { 
+  @media (max-width: 550px) {
+    .header {
+      .logo {
+        width: 70%;
+        height: auto;
+      }
+    } 
 
     .nav{
       .fas{
@@ -299,7 +303,6 @@
       }
       ul{
         display: none;
-        background-color: whitesmoke;
         font-size: 1rem;
         width: 60%;
         padding-top: 6rem;
@@ -317,7 +320,6 @@
         }
       }
     }
-    
   }
 </style>
 

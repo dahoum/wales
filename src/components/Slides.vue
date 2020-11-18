@@ -122,18 +122,18 @@ export default class Slides extends Vue {
         .text {
             h1 {
                 font-size: 1.5rem;
-                margin-top: -10rem;
+                margin-top: -9rem;
             }
 
             h3 {
                 font-size: 12px;
-                margin-top: -8rem;
+                margin-top: -7rem;
                 width: 20rem;
             }
         }
 
         .button {
-            margin-top: -3rem;
+            margin-top: -2.5rem;
             width: 6rem;
             height: 1.8rem;
 
