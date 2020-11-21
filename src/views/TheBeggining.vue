@@ -1,7 +1,8 @@
 <template>
-  <h1>Nurseries</h1>
-  <h3>Nurseries are short—, mid— and long-term proof of concept, prototyping and product development projects, targeted at talent discovery and development.</h3>
-   <router-link to="/NorthWesternTour">The Beggining</router-link>
+  <h1>The Beginning</h1>
+  <h3>When I was 8—I received my 1st computer—an Apple ][. I wanted to immediately do real stuff—program real games. Nobody helped me and this resulted in a major childhood trauma.
+Dahoum specialises in identifying 8+ years old and in nursing them w/ real projects.</h3>
+   <router-link to="/">Read the long story in Kids and Talent.</router-link>
   <Footer/>
 </template>
 

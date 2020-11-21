@@ -1,6 +1,6 @@
 <template>
-  <h1>Talent Scouting</h1>
-  <h3>Dahoum scouts talent since the .com Bubble of 1995-2001.<br> The talent is scouted through an undiluted 1920s Sam Mussabini/Dr. Theodore Stephanides inspired style of turoring.</h3>
+    <h1>Dahoum in 2019</h1>
+    <h3>In 2019 Dahoum will focus on Darmstadt and the region and on the Netherlands. Besides we will remain faithful to Vienna, Prague, Germany (as a whole) and keep our focus on expanding into the UK and Ireland (fun!), France (Paris!), Finnland (Päivölä) and into Switzerland.</h3>
   <Footer/>
 </template>
 
@@ -32,6 +32,21 @@ h3 {
   margin-left: auto;
   text-align: start;
   margin-top: 2rem;
+}
+
+img {
+    width: 40%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+h4 {
+  font-weight: 300;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: start;
+  margin-top: 0.5rem;
 }
   
 </style>

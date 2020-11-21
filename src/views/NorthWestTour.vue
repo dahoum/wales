@@ -1,7 +1,7 @@
 <template>
-  <h1>Nurseries</h1>
-  <h3>Nurseries are short—, mid— and long-term proof of concept, prototyping and product development projects, targeted at talent discovery and development.</h3>
-   <router-link to="/NorthWesternTour">The Beggining</router-link>
+    <h1>Northwest Tournée 2018</h1>
+    <h3>2 000+ km, 5 days, 7 cities, 25 meetings w/ customers, partners and friends / Dahoum’s Northwest Tournée 2018-12-03/07</h3>   
+    <img src="../assets/Northwest-Tournée-2018.png" alt="image">
   <Footer/>
 </template>
 
@@ -14,10 +14,11 @@ import Footer from "@/components/Footer.vue";
     Footer
   }
 })
-export default class Nurseries extends Vue {}
+export default class Talentscouting extends Vue {}
 </script>
 
 <style scoped lang="scss">
+
 h1 {
   font-weight: 400;
   font-size: 2.5rem;
@@ -32,15 +33,12 @@ h3 {
   margin-left: auto;
   text-align: start;
   margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
-a {
-  text-decoration: underline;
-  font-weight: 300;
-  font-size: 1.5rem;
-  color: rgb(46, 46, 46);
+img {
+    width: 60%;
+    height: auto;
+    margin-top: 1rem;
 }
-
-
+  
 </style>

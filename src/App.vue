@@ -11,26 +11,26 @@
           </li>
           <li> <router-link to="/Talentscouting">TALENT SCOUTING</router-link> 
               <ul>
-                <li><router-link to="/Test">Definition of Talent</router-link></li>
+                <li><router-link to="/DefinitionOfTalent">Definition of Talent</router-link></li>
               </ul>
           </li>
           <li> <router-link to="/Past">PAST EVENTS</router-link> 
               <ul>
-                    <li><router-link to="/Test">Amsterdam Light Festival</router-link></li>
-                    <li><router-link to="/Test">Northwest Tournée 2018</router-link></li>
-                    <li><router-link to="/Test">Dahoum in 2019</router-link></li>
-                    <li><router-link to="/Test">Northwestern Tournée 2019</router-link></li> 
+                    <li><router-link to="/AmsterdamFest">Amsterdam Light Festival</router-link></li>
+                    <li><router-link to="/NorthWestTour">Northwest Tournée 2018</router-link></li>
+                    <li><router-link to="/DahoumIn2019">Dahoum in 2019</router-link></li>
+                    <li><router-link to="/NorthWesternTour">Northwestern Tournée 2019</router-link></li> 
               </ul>
           </li>
           <li> <router-link to="/Nurseries">NURSERIES</router-link> 
               <ul>
-                <li><router-link to="/Test">The Beginning</router-link></li>
-                <li><router-link to="/Test">Storytelling w/ Scratch</router-link></li>
-                <li><router-link to="/Test">Raspberry Pi</router-link></li>
-                <li><router-link to="/Test">Scratch</router-link></li>
-                <li><router-link to="/Test">Lord of the Flies</router-link></li>
-                <li><router-link to="/Test">Deep Inspection of Quality</router-link></li>
-                <li><router-link to="/Test">Associated Nurseries</router-link></li>
+                <li><router-link to="/TheBeggining">The Beginning</router-link></li>
+                <li><router-link to="/StoryTellingWithScratch">Storytelling w/ Scratch</router-link></li>
+                <li><router-link to="/RaspberryPi">Raspberry Pi</router-link></li>
+                <li><router-link to="/Scratch">Scratch</router-link></li>
+                <li><router-link to="/LordOfTheFlies">Lord of the Flies</router-link></li>
+                <li><router-link to="/DeepInspectionOfQuality">Deep Inspection of Quality</router-link></li>
+                <li><router-link to="/AssociatedNurseries">Associated Nurseries</router-link></li>
               </ul>
           </li>
           <li> <router-link to="/Blog">BLOG</router-link> 
@@ -201,17 +201,21 @@
         margin-top: 4rem;
         border: none;
         box-shadow: none;
-        opacity: 0.0;
-        z-index: -1;
+        height: 80%;
+        width: 10%;
+
         li {
           line-height: 35px;
+          margin-left: -38rem;
           width: 250px;
           height: 60px;
-          margin-left: -26.4rem;
           text-align: left;
           z-index: 1;
         }
       }
+      ul li:active > ul li {
+    display: block;
+  }
     }
   }
 
@@ -222,6 +226,12 @@
       display: block;
       margin-left: 45vw;
       margin-right: auto;
+      }
+
+      ul li ul {
+        li {
+          margin-left: -35rem;
+        }
       }
     }
   }
@@ -234,9 +244,8 @@
       margin-left: 33vw;
       margin-right: auto;
       }
-
+      
       ul{
-        display: none;
         font-size: 1rem;
         width: 40%;
         padding-top: 6rem;
@@ -251,6 +260,12 @@
         li{
           padding: 1rem;
           margin-left: -3rem;
+        }
+      }
+
+      ul li ul {
+        li {
+          margin-left: -33rem;
         }
       }
     }
@@ -284,6 +299,11 @@
           margin-left: -3rem;
         }
       }
+      ul li ul {
+        li {
+          margin-left: -33rem;
+        }
+      }
     } 
   }
 
@@ -304,7 +324,7 @@
       ul{
         display: none;
         font-size: 1rem;
-        width: 60%;
+        width: 50%;
         padding-top: 6rem;
         padding-right: auto;
         text-align: start;
@@ -317,6 +337,11 @@
         li{
           padding: 1rem;
           margin-left: -3rem;
+        }
+      }
+       ul li ul {
+        li {
+          margin-left: -26rem;
         }
       }
     }
